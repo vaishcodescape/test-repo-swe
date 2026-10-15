@@ -8,7 +8,7 @@ def discounted_price(price: float, percent: float) -> float:
     """
     if price < 0:
         raise ValueError("price must be non-negative")
-    if not 0 <= percent <= 100:
+    if not 0 <= percent < 100:
         raise ValueError("percent must be between 0 and 100")
 
     discount = price * percent / 100
