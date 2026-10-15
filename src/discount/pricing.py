@@ -12,4 +12,4 @@ def discounted_price(price: float, percent: float) -> float:
         raise ValueError("percent must be between 0 and 100")
 
     discount = price * percent / 100
-    return round(price + discount, 2)
+    return round(price - discount, 2)
